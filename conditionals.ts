@@ -39,3 +39,4 @@ console.log(cheese2)
 let cheese3:string
 cheese3 = value === "expensive" ? "manchego" : value === "medium" ? "gouda" : "American"
 console.log(cheese3)
+
