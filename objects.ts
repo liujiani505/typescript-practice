@@ -5,6 +5,24 @@ interface StudentInterface {
     greeting: () => String,
 }
 
+
+class Student {
+
+    name: String
+    age: Number
+    height?: String
+
+    constructor(name:String, age:number){
+        this.name = name
+        this.age = age
+    }
+
+    greeting(){
+        return "Hello"
+    }
+}
+
+
 // const Tim: StudentInterface = {
 //     name: "Tim",
 //     age: 14,
@@ -31,7 +49,14 @@ const ListOfStudents: Array<StudentInterface> = [
     makeStudent("Susie", 14),
 ]
 
-console.log(ListOfStudents)
+const ListOfStudents2: Array<Student> = [
+    new Student("Tim", 14),
+    new Student("Jimmy", 14),
+    new Student("Susie", 14),
+]
+
+
+console.log(ListOfStudents2)
 
 
 
